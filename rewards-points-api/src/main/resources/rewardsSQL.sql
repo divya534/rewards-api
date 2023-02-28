@@ -1,5 +1,3 @@
-# rewards-api
-
 ----- DataBase Creation ------
 
 create database rewardsdb;
@@ -43,4 +41,3 @@ insert into transaction(id, purchase_desc, total_amt, trans_date, customer_id) v
 insert into transaction(id, purchase_desc, total_amt, trans_date, customer_id) values (1010, 'PurchaseK', 118.90, '2023-02-27 10:10:10', 1002);
 
 insert into transaction(id, purchase_desc, total_amt, trans_date, customer_id) values (1011, 'PurchaseL', 300, '2023-02-27 10:10:10', 1001);
-
