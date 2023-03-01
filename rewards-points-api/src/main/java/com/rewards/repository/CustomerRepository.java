@@ -10,6 +10,7 @@ import com.rewards.model.Customer;
 /**
  * @author User
  *
+ *This class is to invoke the entity class to pull the data
  */
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Integer>{
