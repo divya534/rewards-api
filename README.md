@@ -44,3 +44,159 @@ insert into transaction(id, purchase_desc, total_amt, trans_date, customer_id) v
 
 insert into transaction(id, purchase_desc, total_amt, trans_date, customer_id) values (1011, 'PurchaseL', 300, '2023-02-27 10:10:10', 1001);
 
+
+--- To run the application ----
+
+Change the DB password in application.properties file
+
+API for Customer with id
+
+GET URL
+
+http://localhost:8056/customers/1002
+
+{
+    "customerId": 1002,
+    "customerName": "mnr",
+    "transactions": [
+        {
+            "points": 20,
+            "id": 1201,
+            "totalAmount": 70.5,
+            "purchaseDescription": "PurchaseJ",
+            "transactionDate": "2023-02-27T06:00:00.000+00:00"
+        },
+        {
+            "points": 0,
+            "id": 1200,
+            "totalAmount": 15.8,
+            "purchaseDescription": "PurchaseI",
+            "transactionDate": "2023-02-27T06:00:00.000+00:00"
+        },
+        {
+            "points": 86,
+            "id": 1202,
+            "totalAmount": 118.9,
+            "purchaseDescription": "PurchaseK",
+            "transactionDate": "2023-02-27T06:00:00.000+00:00"
+        }
+    ],
+    "rewardPoints": 106,
+    "totalPurchases": 205.2
+}
+
+API for customer 
+
+GET URL 
+
+http://localhost:8056/customers
+
+[
+    {
+        "customerId": 1000,
+        "customerName": "abc",
+        "transactions": [
+            {
+                "points": 470,
+                "id": 1006,
+                "totalAmount": 310.5,
+                "purchaseDescription": "PurchaseF",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 180,
+                "id": 1004,
+                "totalAmount": 165.5,
+                "purchaseDescription": "PurchaseD",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 5,
+                "id": 1009,
+                "totalAmount": 55.8,
+                "purchaseDescription": "PurchaseG",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 50,
+                "id": 1001,
+                "totalAmount": 100.0,
+                "purchaseDescription": "PurchaseA",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 72,
+                "id": 1003,
+                "totalAmount": 111.0,
+                "purchaseDescription": "PurchaseC",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 1,
+                "id": 1002,
+                "totalAmount": 51.0,
+                "purchaseDescription": "PurchaseB",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 10,
+                "id": 1005,
+                "totalAmount": 60.5,
+                "purchaseDescription": "PurchaseE",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            }
+        ],
+        "rewardPoints": 788,
+        "totalPurchases": 854.3
+    },
+    {
+        "customerId": 1001,
+        "customerName": "xyz",
+        "transactions": [
+            {
+                "points": 450,
+                "id": 1008,
+                "totalAmount": 300.0,
+                "purchaseDescription": "PurchaseL",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            }
+        ],
+        "rewardPoints": 450,
+        "totalPurchases": 300.0
+    },
+    {
+        "customerId": 1002,
+        "customerName": "mnr",
+        "transactions": [
+            {
+                "points": 86,
+                "id": 1202,
+                "totalAmount": 118.9,
+                "purchaseDescription": "PurchaseK",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 0,
+                "id": 1200,
+                "totalAmount": 15.8,
+                "purchaseDescription": "PurchaseI",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            },
+            {
+                "points": 20,
+                "id": 1201,
+                "totalAmount": 70.5,
+                "purchaseDescription": "PurchaseJ",
+                "transactionDate": "2023-02-27T06:00:00.000+00:00"
+            }
+        ],
+        "rewardPoints": 106,
+        "totalPurchases": 205.20000000000002
+    }
+]
+
+
+
+
+
+
